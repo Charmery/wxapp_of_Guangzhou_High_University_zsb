@@ -1,0 +1,18 @@
+<!--pages/question/question.wxml-->
+<view>
+  第一题：请选择最喜欢的那一科
+</view>
+<radio-group class="radio-group" bindchange="radioChange_one">
+  <radio class="radio" wx:for-items="{{items}}" wx:key="name" value="{{item.name}}">
+    <text>{{item.value}}</text>
+  </radio>
+</radio-group>
+<view>
+  第二题：请选择最喜欢的那一个
+</view>
+<radio-group class="radio-group" bindchange="radioChange_two">
+  <radio class="radio" wx:for-items="{{itemss}}" wx:key="name" value="{{item.name}}">
+    <text>{{item.value}}</text>
+  </radio>
+</radio-group>
+<button bindtap="jump">点击查看结果</button>
