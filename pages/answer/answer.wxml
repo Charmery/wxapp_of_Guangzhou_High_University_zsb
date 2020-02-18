@@ -1,2 +1,4 @@
 <!--pages/answer/answer.wxml-->
+<view class="body">
 <text>{{information}}</text>
+</view>

@@ -1,1 +1,8 @@
 /* pages/answer/answer.wxss */
+.body
+{
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 25px;
+  margin-right:16px ;
+}

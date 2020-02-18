@@ -1,1 +1,21 @@
 /* pages/welcome/weclome.wxss */
+.body
+{
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 25px;
+  margin-right:16px ;
+}
+.title
+{
+  margin-top: 16px;
+  margin-left: 35%;
+  color: rgb(0,93,15)
+}
+.botton
+{
+  margin-top: 32px;
+  margin-left: 33%;
+  margin-right:33%;
+  color: rgb(0,93,15)
+}

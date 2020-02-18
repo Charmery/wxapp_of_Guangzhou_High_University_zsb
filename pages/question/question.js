@@ -58,6 +58,7 @@ Page({
   },
 
   radioChange_one: function(e) {
+    console.log(e.detail.value);
     switch (e.detail.value) {
       case 'history':
         this.setData({
@@ -131,13 +132,21 @@ Page({
     var check_second = this.data.check_two;
     var check = check_first + check_second;
     console.log(check);
-    wx.setStorageSync('the_ckeck', check)
-    wx.navigateTo({
-      url: '/pages/answer/answer'
-    })
-
-
-  },
+    if(isNaN(check)){
+      this.setData({
+        warning:'请选择您喜欢的科目和物品'
+      })
+    }
+    else {
+      this.setData({
+        warning:''
+      });
+      wx.setStorageSync('the_ckeck', check);
+      wx.navigateTo({
+        url: '/pages/answer/answer'
+      })
+      }
+    },
   /**
    * 生命周期函数--监听页面加载
    */
